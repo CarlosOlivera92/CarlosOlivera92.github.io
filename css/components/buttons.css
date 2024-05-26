@@ -1,0 +1,13 @@
+.button {
+    width: 215px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: var(--clr-primary-500);
+    font-weight: 600;
+    color: var(--clr-neutral-0);
+    transition: background-color .2s ease-in-out;
+}
+.button:hover, .button:focus {
+    background-color: var(--clr-primary-800);
+}
