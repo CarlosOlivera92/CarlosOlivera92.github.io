@@ -19,6 +19,9 @@ a {
   line-height: 25.6px;
   font-weight: 400;
 }
+p {
+    font-size: 12px;
+}
 ul, li {
     list-style: none;
 }
@@ -42,4 +45,11 @@ ul, li {
     line-height: 14.23px;
     letter-spacing: 32.5%;
     color: var(--clr-secondary-800);
+}
+.bolder {
+    font-size: 18px;
+    font-weight: 600;
+}
+.grayed {
+    color: var(--clr-neutral-300);
 }
