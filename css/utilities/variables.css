@@ -1,5 +1,6 @@
 :root {
-    --clr-primary-800: rgb(224, 64, 190);
+    --clr-primary-1000: rgb(119, 45, 99); 
+    --clr-primary-800: rgb(151, 44, 123); 
     --clr-primary-500: rgb(221, 113, 198);
     --clr-primary-100: #e6abd9;
     --clr-primary-800-transparent: rgba(224, 64, 190, 0.7); 
