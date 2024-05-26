@@ -1,6 +1,7 @@
 .headerContainer {
     width: 100%;
-    padding: .5rem;
+    padding-inline: 1.5rem;
+    padding-block: .5rem;
     display: flex;
     background-color: transparent;
     position: relative;
