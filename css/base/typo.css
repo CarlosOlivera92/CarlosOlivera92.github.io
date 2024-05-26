@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+blockquote,
+label,
+input,
+textarea,
+button,
+a {
+  font-family: var(--montserrat);
+  text-decoration: none;
+  line-height: 25.6px;
+  font-weight: 400;
+}
+ul, li {
+    list-style: none;
+}
+.clrPink {
+    color: var(--clr-primary-800) !important;
+}
+.title, .title > * {
+    font-size: 30px;
+    font-family: var(--libre-baskerville) !important;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 400;
+}
+.subtitle {
+    font-size: 16px;
+}
+.countdownTag {
+    color: var(--clr-secondary-800);
+}

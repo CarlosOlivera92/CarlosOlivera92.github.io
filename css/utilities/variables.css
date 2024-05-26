@@ -1,0 +1,21 @@
+:root {
+    --clr-primary-1000: rgb(119, 45, 99); 
+    --clr-primary-800: rgb(151, 44, 123); 
+    --clr-primary-500: rgb(221, 113, 198);
+    --clr-primary-100: #e6abd9;
+    --clr-primary-800-transparent: rgba(224, 64, 190, 0.7); 
+
+    --clr-secondary-800: #3cadf3;
+    --clr-secondary-500: #73C3F4;
+    --clr-secondary-100: #a5d7f7;
+
+    --clr-hero-background: #FFD900;
+
+    --clr-neutral-0: #fff;
+    --clr-neutral-100: #F9F9F9;
+    --clr-neutral-500: #111;
+    --clr-neutral-500-transparent: rgba(17, 17, 17, .7);
+
+    --libre-baskerville: "Libre Baskerville", serif;
+    --montserrat: "Montserrat", sans-serif;
+}
