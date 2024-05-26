@@ -4,7 +4,7 @@
     padding-block: .5rem;
     display: flex;
     background-color: transparent;
-    position: static;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     z-index: 10;

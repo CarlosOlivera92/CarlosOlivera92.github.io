@@ -9,6 +9,3 @@ html {
 .hidden {
     display: none !important;
 }
-.clrPink {
-    color: var(--clr-primary-500);
-}
