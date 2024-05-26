@@ -1,0 +1,97 @@
+.headerContainer {
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    background-color: transparent;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.headerContainer .navbar .hamburger-menu {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+}
+.headerContainer .navbar .hamburger-menu .line {
+    width: fit-content;
+    height: 100%;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+.headerContainer .navbar .hamburger-menu:focus .line {
+    background-color: var(--clr-primary-100);
+}
+.headerContainer .navbar .hamburger-menu:focus .line:nth-child(2) {
+    opacity: 0;
+}
+.headerContainer .navbar .hamburger-menu:focus .line:nth-child(1) {
+    transform: rotate(45deg) translateY(12px);
+}
+.headerContainer .navbar .hamburger-menu:focus .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+}
+.headerContainer .navbar .hamburger-menu .line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-primary-500);
+    z-index: 100;
+}
+.headerContainer .navbar .navbar-menu {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--clr-primary-800-transparent);
+    backdrop-filter: blur(5px);
+    gap: 1rem;
+    opacity: 0;
+    z-index: 1;
+}
+.headerContainer .navbar .hamburger-menu:focus ~ .navbar-menu  {
+    animation: menuAppear .2s forwards;
+}
+.headerContainer .navbar .navbar-menu li {
+    opacity: 0;
+    list-style-type: none;
+    margin: 1rem;
+}
+.headerContainer .navbar .hamburger-menu:focus ~ .navbar-menu li {
+    opacity: 1;
+}
+.headerContainer .navbar .navbar-menu a {
+    color: var(--clr-neutral-0);
+}
+.headerContainer .navbar .navbar-menu a:hover {
+    animation: underline .3s forwards;
+}
+@keyframes underline {
+    0% {
+        border-bottom: 0px solid var(--clr-neutral-0);
+        opacity: 0;
+    }
+    100% {
+        border-bottom: 2px solid var(--clr-neutral-0);
+        padding-bottom: 1rem;
+
+    }
+}
+@keyframes menuAppear {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

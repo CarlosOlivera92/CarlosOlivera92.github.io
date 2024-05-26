@@ -3,3 +3,9 @@ html {
     scroll-padding-top: 8rem;
 }
 
+.show {
+    display: flex !important;
+}
+.hidden {
+    display: none !important;
+}
