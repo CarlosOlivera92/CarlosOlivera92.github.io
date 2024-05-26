@@ -36,5 +36,10 @@ ul, li {
     font-size: 16px;
 }
 .countdownTag {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 14.23px;
+    letter-spacing: 32.5%;
     color: var(--clr-secondary-800);
 }
