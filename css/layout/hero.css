@@ -40,7 +40,6 @@
     padding-inline: 3rem;
     padding-block: 6rem 3rem;
     color: var(--clr-neutral-400);
-
     gap: 2rem;
     z-index: 1;
 }
