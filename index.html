@@ -8,8 +8,62 @@
         <link rel="canonical" href="https://www.abetterweight.com/">
         <link rel="robots" href="./robots.txt">
         <meta name="author" content="Alpha Efficiency">
-        <link rel="stylesheet" href="./css/main.css">
-
+        <style>
+            @font-face {
+                font-family: "Montserrat", serif;
+                src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("trueType");
+            }
+            @font-face {
+                font-family: "Libre Baskerville", serif;
+                src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("trueType");
+            }
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            span,
+            blockquote,
+            label,
+            input,
+            textarea,
+            button,
+            a {
+            font-family: var(--montserrat);
+            text-decoration: none;
+            line-height: 25.6px;
+            font-weight: 400;
+            }
+            p {
+                font-size: 12px;
+            }
+            ul, li {
+                list-style: none;
+            }
+            .clrPink {
+                color: var(--clr-primary-800) !important;
+            }
+            .title, .title > * {
+                font-size: 30px;
+                font-family: var(--libre-baskerville) !important;
+                line-height: 48px;
+                text-align: center;
+                font-weight: 400;
+            }
+            .subtitle {
+                font-size: 16px;
+            }
+            
+        </style>
+    <link rel="stylesheet" href="css/main.css">
+<noscript><link rel="stylesheet" href="/css/main.css"></noscript>
     </head>
     <body>
         <header class="headerContainer">
@@ -72,6 +126,55 @@
                 <button class="button" title="Book my appointment">Book my appointment</button>
             </div>
         </div>
-        <script type="module" src="./js/app.js"></script>
+        <main>
+            <section class="knowUsContainer" id="knowUs">
+                <div class="background">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+
+                </div>
+                <div class="cardsContainer">
+                    <div class="cardSm">
+                        <div class="image">
+                            <img src="./assets/images/icons/briefcase.svg" alt="suitcase icon" title="Suitcase" width="24px" height="24px">
+                        </div>
+                        <div class="content">
+                            <p class="bolder">10 <span class="grayed">+</span></p>
+                            <p>years in business</p>
+                        </div>
+                    </div>
+                    <div class="cardSm">
+                        <div class="image">
+                            <img src="./assets/images/icons/smile.svg" alt="smile icon" title="Smile face" width="24px" height="24px">
+                        </div>
+                        <div class="content">
+                            <p class="bolder">2000 <span class="grayed">+</span></p>
+                            <p>positive reviews</p>
+                        </div>
+                    </div>
+                    <div class="cardSm">
+                        <div class="image">
+                            <img src="./assets/images/icons/message-circle.svg" alt="message circle icon" title="Message" width="24px" height="24px">
+                        </div>
+                        <div class="content">
+                            <p class="bolder">15.000 <span class="grayed">+</span></p>
+                            <p>satisfied clients</p>
+                        </div>
+                    </div>
+                    <div class="cardSm">
+                        <div class="image">
+                            <img src="./assets/images/icons/activity.svg" alt="activity icon" title="Activity" width="24px" height="24px">
+                        </div>
+                        <div class="content">
+                            <p class="bolder">Many <span class="grayed">+</span></p>
+                            <p>nurses and physician assistants on staff</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button" title="Book my appointment">Book my appointment</button>
+
+            </section>
+        </main>
+        <script type="module" src="./js/app.js" defer></script>
     </body>
 </html>

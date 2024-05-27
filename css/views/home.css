@@ -1,71 +1,60 @@
-.heroContainer {
+@import url("../layout/hero.css");
+
+.knowUsContainer {
     width: 100%;
-    height: 100%;
-    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: fit-content;
+    position: relative;
+    padding: 2rem;
 }
-.heroContainer .background {
+.knowUsContainer .background {
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    overflow: hidden;
     z-index: -1;
 }
-.heroContainer .background .circle {
+.knowUsContainer .background .circle {
     position: absolute;
-    top: 131px;
-    left: 253px;
+    top: 90px;
+    left: 300px;
     opacity: .2;
 }
-.heroContainer .background::after {
+.knowUsContainer .background .circle-2 {
+    width: 125px;
+    height: 125px;
+    top: 15rem; 
+    left: -4rem;
+}
+.knowUsContainer .background::after {
     content: " ";
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
-    margin-left: 50%;
-    background-color: var(--clr-hero-background);
-    border-top-left-radius: 3rem;
+    right: 0;
+    display: flex;
+    background-color: var(--clr-primary-500);
     z-index: -1;
 }
-.heroContainer .content {
-    height: 100%;
+.knowUsContainer .cardsContainer {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-inline: 3rem;
-    padding-block: 2rem;
-    gap: 2rem;
-    z-index: 10 ;
-}
-.heroContainer .content .countdownContainer {
-    width: 100%;
-    height: 189px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0.49));
-    backdrop-filter: blur(20px);
-    padding-block: 36px;
-    padding-inline: 26px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1);
-}
-.heroContainer .content .countdownContainer .countdown {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    align-items: start;
     gap: 1rem;
 }
-.heroContainer .content .countdownContainer .countdown .col {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.knowUsContainer .cardsContainer .cardSm:last-child {
+    justify-content: end;
+    padding-bottom: .8rem;
+}
+.knowUsContainer .button {
+    background-color: var(--clr-yellow-500);
+    color: var(--clr-neutral-500);
 }
