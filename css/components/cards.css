@@ -21,7 +21,9 @@
 
 .card {
     width: 100%;
+    max-width: 447px;
     height: 295px;
+    max-height: 391px;
     padding: 2rem;
     background-color: var(--clr-neutral-0);
     border-radius: 20px;
