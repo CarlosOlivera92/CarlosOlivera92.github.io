@@ -189,3 +189,66 @@
 .weightSupportContainer .content .image img {
     width: calc(100% + 4rem);
 }
+.servicesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    max-height: 997px;
+    position: relative;
+    padding: 2rem;
+}
+.servicesContainer .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.servicesContainer .background .circle {
+    width: 139px;
+    height: 139px;
+    position: absolute;
+    top: 5rem;
+    left: 320px;
+    border: 17px solid var(--clr-neutral-0);
+}
+.servicesContainer .background .circle-2 {
+    width: 164px;
+    height: 164px;
+    top: 10px;
+    left: -30px;
+}
+.servicesContainer .background::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    background-color: var(--clr-neutral-100);
+    z-index: -1;
+}
+.servicesContainer .cardsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+}
+.servicesContainer .cardsContainer .title {
+    text-align: left;
+}
+.servicesContainer .cardsContainer .card:nth-child(2) .divider {
+    background-color: var(--clr-secondary-800);
+
+}
+.servicesContainer .cardsContainer .card:nth-child(3) .divider {
+    background-color: var(--clr-primary-800);
+
+}
