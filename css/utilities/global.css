@@ -33,3 +33,6 @@ html {
 .arrow:hover {
     background-color: var(--clr-neutral-300);
 }
+img {
+    object-fit: contain;
+}
