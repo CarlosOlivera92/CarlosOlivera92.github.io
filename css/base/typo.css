@@ -58,3 +58,6 @@ ul, li {
 .grayed {
     color: var(--clr-neutral-300);
 }
+.clrSecondary {
+    color: var(--clr-secondary-800);
+}
