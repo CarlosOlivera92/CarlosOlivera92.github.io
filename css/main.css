@@ -7,8 +7,10 @@
 @import url("./components/buttons.css");
 @import url("./components/circles.css");
 @import url("./components/cards.css");
-
+@import url("./components/contactItem.css");
 
 @import url("./layout/header.css");
 
 @import url("./views/home.css");
+
+@import url("./layout/footer.css");

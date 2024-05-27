@@ -1,0 +1,13 @@
+.contactItem {
+    width: 257px;
+    display: flex;
+    gap: 1rem;
+    padding-block: 1rem;
+    padding-inline: .5rem;
+}
+.contactItem .icon {
+    padding-top: .2rem;
+}
+.contactItem .contactInfo p {
+    font-size: 14px;
+}

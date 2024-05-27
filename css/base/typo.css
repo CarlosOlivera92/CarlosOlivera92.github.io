@@ -64,3 +64,6 @@ ul, li {
 .clrSecondary {
     color: var(--clr-secondary-800);
 }
+.bold {
+    font-weight: 600;
+}
