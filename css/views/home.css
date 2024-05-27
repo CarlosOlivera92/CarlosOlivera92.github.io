@@ -50,6 +50,10 @@
     justify-content: center;
     gap: 1rem;
 }
+.knowUsContainer .cardsContainer .cardSm:last-child {
+    justify-content: end;
+    padding-bottom: .8rem;
+}
 .knowUsContainer .button {
     background-color: var(--clr-yellow-500);
     color: var(--clr-neutral-500);
