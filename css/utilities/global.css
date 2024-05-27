@@ -21,23 +21,15 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 16px;
-    height: 16px;
-}
-
-.arrow::before,
-.arrow::after {
-    content: '';
-    display: block;
     width: 12px;
-    height: 2px;
-    background-color: var(--clr-primary-800);
+    height: 12px;
+    cursor: pointer;
+    border: none;
+    padding: .7rem;
+    border-radius: 100%;
+    background-color: transparent;
+    transition: background-color .2s ease-in-out;
 }
-
-.arrow::before {
-    transform: rotate(45deg) translateY(6px) translateX(-4px);
-}
-
-.arrow::after {
-    transform: rotate(-45deg) translateY(0px) translateX(1px);
+.arrow:hover {
+    background-color: var(--clr-neutral-300);
 }
