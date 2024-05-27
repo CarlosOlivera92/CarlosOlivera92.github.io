@@ -59,6 +59,7 @@
     background-color: var(--clr-neutral-100);
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .3);
     border-radius: 20px;
+    color: var(--clr-neutral-400);
 }
 .cardLarge .cardHeader {
     display: flex;
@@ -68,4 +69,8 @@
 .cardLarge .cardHeader h4 {
     width: 80%;
     font-size: 14px;
+    font-weight: 600;
+}
+.cardLarge .cardContent {
+    margin-top: 1rem;
 }
