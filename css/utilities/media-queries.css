@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+    a,p {
+        font-size: 16px;
+    }
+    .headerContainer {
+        position: relative;
+    }
+    .heroContainer .background .circle-1 {
+        width: 289px;
+        height: 289px;
+        border-width: 28px;
+        top: 1rem;
+        left: 70%;
+    }
+    .heroContainer .background .circle-2 {
+        width: 273px;
+        height: 273px;
+        border-width: 20px;
+        display: block;
+        top: 38%;
+        left: -12%;
+        border-color: var(--clr-neutral-300);
+    }
+    .heroContainer .background .circle-3 {
+        width: 179px;
+        height: 179px;
+        display: block;
+        border-width: 20px;
+        top: 58%;
+        left: 65%;
+    }
+    .heroContainer .content {
+        align-items: start;
+    }
+    .heroContainer .content .title {
+        width: 432px;
+        text-align: left;
+        font-size: 36px;
+        line-height: 54px;
+    }
+    .heroContainer .content .subtitle {
+        width: 425px;
+    }
+    .heroContainer .content .spot {
+        align-self: center;
+    }
+    .heroContainer .content .countdownContainer {
+        width: 394px;
+        height: 223px;
+        align-self: center;
+        justify-content: space-around;
+    }
+    .heroContainer .content .countdownContainer .countdown .countdownTag{
+        font-size: 12px;
+    }
+    .heroContainer .content .countdownContainer .countdown .countdownNumb{
+        font-size: 36px;
+    }
+    .heroContainer .content .button {
+        align-self: center;
+    }
+}

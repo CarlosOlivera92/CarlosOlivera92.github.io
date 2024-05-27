@@ -4,3 +4,6 @@
     border: 28px solid var(--clr-neutral-0);
     border-radius: 100%;
 }
+.circle-2, .circle-3 {
+    display: none;
+}
