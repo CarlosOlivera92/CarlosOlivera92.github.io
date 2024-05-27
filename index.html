@@ -8,14 +8,19 @@
         <link rel="canonical" href="https://www.abetterweight.com/">
         <link rel="robots" href="./robots.txt">
         <meta name="author" content="Alpha Efficiency">
+        <meta name="robots" content="index, follow">
+
         <style>
             @font-face {
                 font-family: "Montserrat", serif;
                 src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("trueType");
+                font-display: swap;
             }
             @font-face {
                 font-family: "Libre Baskerville", serif;
                 src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("trueType");
+                font-display: swap;
+
             }
             body {
                 font-family: 'Montserrat', sans-serif;
@@ -41,6 +46,12 @@
             line-height: 25.6px;
             font-weight: 400;
             }
+            h2 {
+                font-size: 28px;
+                font-family: var(--libre-baskerville);
+                line-height: 38.4px;
+                font-weight: 400;
+            }
             p {
                 font-size: 12px;
             }
@@ -62,8 +73,8 @@
             }
             
         </style>
-    <link rel="stylesheet" href="css/main.css">
-<noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+        <link rel="stylesheet" href="css/main.css">
+        <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
     </head>
     <body>
         <header class="headerContainer">
@@ -131,7 +142,6 @@
                 <div class="background">
                     <div class="circle circle-1"></div>
                     <div class="circle circle-2"></div>
-
                 </div>
                 <div class="cardsContainer">
                     <div class="cardSm">
@@ -172,7 +182,33 @@
                     </div>
                 </div>
                 <button class="button" title="Book my appointment">Book my appointment</button>
-
+            </section>
+            <section class="consultationInfoContainer" id="consultationInfo">
+                <div class="background">
+                    <div class="circle circle-1"></div>
+                </div>
+                <div class="content">
+                    <article class="consultationInfo">
+                        <h2>
+                            Who Is The Consultation For?
+                        </h2>
+                        <p>
+                            Chicago's free medical check-up and weight loss consultation is for Chicago residents who are looking to lose weight so they can live a long, vibrant and healthy life, while looking good and not breaking the bank.
+                        </p>
+                    </article>
+                    <article class="consultationInfo">
+                        <h2>
+                            How Does It Work?
+                        </h2>
+                        <p>
+                            In this exam a certified nurse or physician will do various tests to check your overall health level and find which easy-to-do physician-supervised weight loss program will work best for you.
+                        </p>
+                    </article>
+                    <button class="button" title="Book my appointment">Book my appointment</button>
+                    <div class="image">
+                        <img src="./assets/images/healthy-woman.svg" alt="Healthy woman" title="Healthy woman" width="322px" height="363px">
+                    </div>
+                </div>
             </section>
         </main>
         <script type="module" src="./js/app.js" defer></script>
