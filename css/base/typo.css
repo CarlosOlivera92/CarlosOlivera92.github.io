@@ -21,6 +21,12 @@ a {
 p {
     font-size: 12px;
 }
+h2 {
+    font-size: 28px;
+    font-family: var(--libre-baskerville);
+    line-height: 38.4px;
+    font-weight: 400;
+}
 ul, li {
     list-style: none;
 }
