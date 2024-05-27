@@ -5,15 +5,15 @@
     --clr-primary-100: #e6abd9;
     --clr-primary-800-transparent: rgba(224, 64, 190, 0.7); 
 
-    --clr-secondary-800: #3cadf3;
+    --clr-secondary-800: #0083D3FF;
     --clr-secondary-500: #73C3F4;
     --clr-secondary-100: #a5d7f7;
 
     --clr-yellow-800: #998202;
     --clr-yellow-500: #FFD900;
 
-    --clr-neutral-0: #fff;
-    --clr-neutral-100: #F9F9F9;
+    --clr-neutral-0: #FFFFFF;
+    --clr-neutral-100: #F9F9F9FF;
     --clr-neutral-300: #c4c4c4;
     --clr-neutral-400: #333333;
     --clr-neutral-500: #111;
