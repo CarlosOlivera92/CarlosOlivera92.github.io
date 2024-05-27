@@ -48,4 +48,5 @@
 .card .cardContent .listContainer .listItem {
     font-size: 14px;
     list-style-type: disc;
+    color: var(--clr-neutral-400);
 }
