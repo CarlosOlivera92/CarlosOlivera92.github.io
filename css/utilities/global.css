@@ -15,3 +15,21 @@ html {
     background-color: var(--clr-neutral-400);
     margin-block-end: .5rem;
 }
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border: none;
+    padding: .7rem;
+    border-radius: 100%;
+    background-color: transparent;
+    transition: background-color .2s ease-in-out;
+}
+.arrow:hover {
+    background-color: var(--clr-neutral-300);
+}

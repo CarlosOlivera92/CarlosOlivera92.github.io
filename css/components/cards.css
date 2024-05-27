@@ -21,10 +21,12 @@
 
 .card {
     width: 100%;
+    max-width: 447px;
     height: 295px;
+    max-height: 391px;
     padding: 2rem;
     background-color: var(--clr-neutral-0);
-    border-radius: 20px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,4 +50,29 @@
 .card .cardContent .listContainer .listItem {
     font-size: 14px;
     list-style-type: disc;
+    color: var(--clr-neutral-400);
+}
+.cardLarge {
+    width: 100%;
+    max-width: 1135px;
+    padding: 1rem;
+    background-color: var(--clr-neutral-100);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    color: var(--clr-neutral-400);
+}
+.cardLarge .hidden {
+    height: 0;
+    display: flex !important;
+    visibility: hidden;
+}
+.cardLarge .cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardLarge .cardHeader h4 {
+    width: 80%;
+    font-size: 14px;
+    font-weight: 600;
 }
