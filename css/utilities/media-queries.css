@@ -431,5 +431,56 @@
     .faqsContainer .cardsContainer {
         width: 1138px;
     }
+    .footerContainer .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        align-self: center;
+        gap: 4rem;
+    }
+    
+    .footerContainer .content .companyContainer {
+        grid-column: 1;
+        grid-row: 1;
+        width: 443px;
+    }
+    
+    .footerContainer .content .contactContainer {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+    
+    .footerContainer .content .linksContainer {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: flex-start;
+        gap: 5rem;
+    }
+    .footerContainer .content .linksContainer .title {
+        font-size: 24px !important; 
+    }
+    .footerContainer .content .foot {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        width: 100%;
+    }
+    
+    .footerContainer .content .contactContainer .contactItem {
+        width: 100%;
+    }
+    
+    .footerContainer .content .contactContainer .contactItem .contactInfo {
+        display: flex;
+    }
+    
+    .footerContainer .content .socialMediaContainer,
+    .footerContainer .content .disclaimer {
+        width: 100%;
+    }
     
 }
