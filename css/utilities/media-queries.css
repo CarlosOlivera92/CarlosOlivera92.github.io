@@ -1,6 +1,16 @@
 @media (min-width: 768px) {
     a,p {
-        font-size: 16px;
+        font-size: 16px !important;
+    }
+    h2 {
+        width: 408px;
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 16px !important;
+    }
+    .title {
+        font-size: 32px;
     }
     .headerContainer {
         position: relative;
@@ -18,7 +28,7 @@
         border-width: 20px;
         display: block;
         top: 38%;
-        left: -12%;
+        left: -15%;
         border-color: var(--clr-neutral-300);
     }
     .heroContainer .background .circle-3 {
@@ -58,5 +68,99 @@
     }
     .heroContainer .content .button {
         align-self: center;
+    }
+    .knowUsContainer {
+        height: 372px;
+    }
+    .knowUsContainer .background .circle-1 {
+        width: 181px;
+        height: 181px;
+        left: 82%;
+        top: 40%;
+    }
+    .knowUsContainer .background .circle-2 {
+        display: none !important;
+    }
+    .knowUsContainer .cardsContainer .cardSm {
+        width: 146px;
+        height: 215px;
+    }
+
+    .consultationInfoContainer .background .circle-1 {
+        width: 413px;
+        height: 413px;
+        border-width: 28px;
+        top: 10%;
+        left: 75%;
+    }
+    .consultationInfoContainer .background .circle-2 {
+        width: 413px;
+        height: 413px;
+        border-width: 20px;
+        display: block;
+        top: 40%;
+        left: -30%;
+    }
+    .weightSupportContainer .background .circle-1 {
+        width: 328px;
+        height: 328px;
+        border-width: 20px;
+        display: block;
+        top: 2%;
+        left: 70%;
+    }
+    .weightSupportContainer .content {
+        width: 440px;
+    }
+    .weightSupportContainer .content .image {
+        width: 100%;
+        left: -10rem !important;
+    }
+    .weightSupportContainer .content .image img {
+        width: calc(100% + 20rem);
+    }
+    .servicesContainer .background .circle-1 {
+        width: 238px;
+        height: 238px;
+        left: 80%;
+        top: 40%;
+    }
+    .servicesContainer .background .circle-2 {
+        width: 238px;
+        height: 238px;
+        left: -10%;
+    }
+    .servicesContainer .background .circle-3 {
+        display: block;
+        width: 392px;
+        height: 392px;
+        left: -35%;
+        top: 60%;
+    }
+    .servicesContainer .cardsContainer {
+        width: 440px;
+    }
+    .servicesContainer .cardsContainer .card {
+        align-items: center;
+        width: 440px;
+        padding-inline: 6rem;
+    }
+    .faqsContainer {
+        align-items: center;
+    }
+    .faqsContainer .cardsContainer {
+        width: 439px;
+    }
+    .footerContainer {
+        padding-inline: 4rem;
+    }
+    .footerContainer .content .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    .footerContainer .content .foot .socialMediaContainer{
+        padding: 0;
     }
 }
