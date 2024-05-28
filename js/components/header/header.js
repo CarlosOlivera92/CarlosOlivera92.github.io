@@ -3,22 +3,33 @@ export const header = () => {
     const navMenu = document.getElementById("navMenu");
     const header = document.querySelector(".headerContainer");
 
-    hamburguerButton.addEventListener("focus", () => {
-        navMenu.classList.remove("hidden");
-        navMenu.classList.add("show");
-    });
-    
-    hamburguerButton.addEventListener("blur", (event) => {
-        if (!navMenu.contains(event.relatedTarget)) {
+    const toggleNavMenu = () => {
+        if (navMenu.classList.contains("hidden")) {
+            navMenu.classList.remove("hidden");
+            navMenu.classList.add("show");
+            hamburguerButton.classList.add("focused");
+        } else {
             navMenu.classList.remove("show");
             navMenu.classList.add("hidden");
+            hamburguerButton.classList.remove("focused");
+        }
+    };
+
+    hamburguerButton.addEventListener("click", toggleNavMenu);
+
+    hamburguerButton.addEventListener("blur", (event) => {
+        if (!navMenu.contains(event.relatedTarget) && event.relatedTarget !== hamburguerButton) {
+            navMenu.classList.remove("show");
+            navMenu.classList.add("hidden");
+            hamburguerButton.classList.remove("focused");
         }
     });
-    
+
     navMenu.addEventListener("blur", (event) => {
         if (!navMenu.contains(event.relatedTarget) && event.relatedTarget !== hamburguerButton) {
             navMenu.classList.remove("show");
             navMenu.classList.add("hidden");
+            hamburguerButton.classList.remove("focused");
         }
     }, true);
 
@@ -27,7 +38,7 @@ export const header = () => {
             gsap.to(header, { 
                 duration: 0.5, 
                 backgroundColor: "rgba(255, 255, 255, 0.8)", 
-                backdropFilter: "blur(20px)"
+                backdropFilter: "blur(10px)"
             });
         } else {
             gsap.to(header, { 
@@ -35,6 +46,14 @@ export const header = () => {
                 backgroundColor: "transparent", 
                 backdropFilter: "blur(0px)"
             });
+        }
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!navMenu.contains(event.target) && event.target !== hamburguerButton && !hamburguerButton.contains(event.target)) {
+            navMenu.classList.remove("show");
+            navMenu.classList.add("hidden");
+            hamburguerButton.classList.remove("focused");
         }
     });
 };
