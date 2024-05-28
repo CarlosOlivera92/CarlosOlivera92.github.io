@@ -169,7 +169,9 @@
     li, p {
         font-size: 18px !important;
     }
-
+    .circle {
+        border-width: 28px !important;
+    }
     .headerContainer {
         position: fixed;
         justify-content: center;
@@ -408,6 +410,24 @@
     .servicesContainer {
         height: 796px;
     }
+    .servicesContainer .background .circle-1 {
+        width: 279px;
+        height: 279px;
+        top: 5%;
+    }
+    .servicesContainer .background .circle-2 {
+        display: block !important;
+        width: 386px;
+        height: 386px;
+        top: 28%;
+    }
+    .servicesContainer .background .circle-3 {
+        display: block !important;
+        width: 158px;
+        height: 158px;
+        top: 50%;
+        left: 78%;
+    }
     .servicesContainer .cardsContainer {
         width: 100%;
         flex-direction: row;
@@ -428,8 +448,43 @@
         gap: 2.5rem;
         justify-content: space-between;
     }
+    .faqsContainer .background .circle-1 {
+        width: 269px;
+        height: 269px;
+        left: 84%;
+    }
+    .faqsContainer .background .circle-2 {
+        width: 410px;
+        height: 410px;
+        display: block !important;
+        top: 54%;
+        left: -10%;
+        border-width: 28px;
+    }
+    .faqsContainer .title {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
     .faqsContainer .cardsContainer {
         width: 1138px;
+    }
+    .faqsContainer .cardsContainer .button {
+        display: block !important;
+        margin-top: 2rem;
+    }
+    .footerContainer .background .circle-1 {
+        width: 368px;
+        height: 368px;
+        left: 85%;
+        top: 25%;
+    }
+    .footerContainer .background .circle-2 {
+        display: block !important;
+        width: 230px;
+        height: 230px;
+        left: 5%;
+        top: 25%;
     }
     .footerContainer .content {
         display: grid;
