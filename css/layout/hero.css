@@ -46,6 +46,7 @@
 .heroContainer .content .countdownContainer {
     width: 100%;
     height: 189px;
+    max-height: 508px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0.49));
     backdrop-filter: blur(20px);
     padding-block: 36px;

@@ -1,0 +1,323 @@
+@media (min-width: 768px) {
+    a,p {
+        font-size: 16px ;
+    }
+    h2 {
+        width: 408px;
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 16px !important;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .headerContainer {
+        position: relative;
+    }
+    .heroContainer .background .circle-1 {
+        width: 289px;
+        height: 289px;
+        border-width: 28px;
+        top: 1rem;
+        left: 70%;
+    }
+    .heroContainer .background .circle-2 {
+        width: 273px;
+        height: 273px;
+        border-width: 20px;
+        display: block;
+        top: 38%;
+        left: -15%;
+        border-color: var(--clr-neutral-300);
+    }
+    .heroContainer .background .circle-3 {
+        width: 179px;
+        height: 179px;
+        display: block;
+        border-width: 20px;
+        top: 58%;
+        left: 65%;
+    }
+    .heroContainer .content {
+        align-items: start;
+    }
+    .heroContainer .content .title {
+        width: 432px;
+        text-align: left;
+        font-size: 36px;
+        line-height: 54px;
+    }
+    .heroContainer .content .subtitle {
+        width: 425px;
+    }
+    .heroContainer .content .spot {
+        align-self: center;
+    }
+    .heroContainer .content .countdownContainer {
+        width: 394px;
+        height: 223px;
+        align-self: center;
+        justify-content: space-around;
+    }
+    .heroContainer .content .countdownContainer .countdown .countdownTag{
+        font-size: 12px;
+    }
+    .heroContainer .content .countdownContainer .countdown .countdownNumb{
+        font-size: 36px;
+    }
+    .heroContainer .content .button {
+        align-self: center;
+    }
+    .knowUsContainer {
+        height: 372px;
+    }
+    .knowUsContainer .background .circle-1 {
+        width: 181px;
+        height: 181px;
+        left: 82%;
+        top: 40%;
+    }
+    .knowUsContainer .background .circle-2 {
+        display: none !important;
+    }
+    .knowUsContainer .cardsContainer .cardSm {
+        width: 146px;
+        height: 215px;
+    }
+
+    .consultationInfoContainer .background .circle-1 {
+        width: 413px;
+        height: 413px;
+        border-width: 28px;
+        top: 10%;
+        left: 75%;
+    }
+    .consultationInfoContainer .background .circle-2 {
+        width: 413px;
+        height: 413px;
+        border-width: 20px;
+        display: block;
+        top: 40%;
+        left: -30%;
+    }
+    .weightSupportContainer .background .circle-1 {
+        width: 328px;
+        height: 328px;
+        border-width: 20px;
+        display: block;
+        top: 2%;
+        left: 70%;
+    }
+    .weightSupportContainer .content {
+        width: 440px;
+    }
+    .weightSupportContainer .content .image {
+        width: 100%;
+        left: -10rem !important;
+    }
+    .weightSupportContainer .content .image img {
+        width: calc(100% + 20rem);
+    }
+    .servicesContainer .background .circle-1 {
+        width: 238px;
+        height: 238px;
+        left: 80%;
+        top: 40%;
+    }
+    .servicesContainer .background .circle-2 {
+        width: 238px;
+        height: 238px;
+        left: -10%;
+    }
+    .servicesContainer .background .circle-3 {
+        display: block;
+        width: 392px;
+        height: 392px;
+        left: -35%;
+        top: 60%;
+    }
+    .servicesContainer .cardsContainer {
+        width: 440px;
+    }
+    .servicesContainer .cardsContainer .card {
+        align-items: center;
+        width: 440px;
+        padding-inline: 6rem;
+    }
+    .faqsContainer {
+        align-items: center;
+    }
+    .faqsContainer .cardsContainer {
+        width: 439px;
+        max-width: 1138px;
+    }
+    .footerContainer {
+        padding-inline: 4rem;
+    }
+    .footerContainer .content .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    .footerContainer .content .foot .socialMediaContainer{
+        padding: 0;
+    }
+}
+@media (min-width: 1240px) {
+    p {
+        font-size: 18px !important;
+    }
+    .title {
+        width: 400px !important;
+    }
+    .headerContainer {
+        position: fixed;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .headerContainer .navbar .hamburger-menu {
+        display: none;
+    }
+
+    .headerContainer .navbar .navbar-menu {
+        height: fit-content;
+        display: flex !important;
+        flex-direction: row;
+        padding: 0;
+        position: relative;
+        background-color: transparent;
+        backdrop-filter: none;
+        opacity: 1;
+    }
+    .headerContainer .navbar .navbar-menu li {
+        opacity: 1;
+    }
+    .headerContainer .navbar .navbar-menu a {
+        color: var(--clr-neutral-400);
+        font-size: 14px;
+    }
+    .headerContainer .navbar .navbar-menu a:hover {
+        border-color: var(--clr-neutral-400) !important;
+    }
+    .heroContainer {
+        height: 760px;
+        max-height: 760px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-block: 4rem;
+    }
+    .heroContainer .background {
+        background-color: var(--clr-neutral-100);
+    }
+    .heroContainer .background::after {
+        width: 31%;
+    }
+    .heroContainer .background .circle-1 {
+        width: 416px;
+        height: 416px;
+        left: 87%;
+        top: 15%;
+    }
+    .heroContainer .background .circle-2 {
+        width: 386px;
+        height: 386px;
+        border-color: var(--clr-neutral-0);
+        left: -5%;
+        top: 24%;
+        opacity: 1;
+    }
+    .heroContainer .background .circle-3 {
+        display: none;
+    }
+    .heroContainer .content {
+        width: fit-content;
+        display: grid ;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px; 
+        padding-block: 6rem;
+        padding-inline: 0;
+    }
+    .heroContainer .content .title, .heroContainer .content .title > * {
+        font-size: 45px;
+        line-height: 68px;
+    }
+
+    .heroContainer .content .title,
+    .heroContainer .content .subtitle,
+    .heroContainer .content .button {
+        grid-column: 1; 
+    }
+    .heroContainer .content .spot {
+        display: none;
+    }
+    
+    .heroContainer .content .countdownContainer {
+        width: 629px;
+        height: 321px;
+        grid-row: 1 / span 3;
+        grid-column: 2; 
+        position: relative;
+        margin-left: -6rem;
+        align-self: flex-start;
+    }
+    .heroContainer .content .countdownContainer p {
+        font-size: 18px;
+    }
+    .heroContainer .content .countdownContainer .countdown .countdownNumb {
+        font-size: 50px !important;
+    }
+    .knowUsContainer {
+        height: 570px;
+        gap: 4rem;
+    }
+    .knowUsContainer .background .circle-1 {
+        width: 308px;
+        height: 308px;
+        top: 10%;
+        left: 95%;
+    }
+    .knowUsContainer .background .circle-2 {
+        width: 185px;
+        height: 185px;
+        display: block !important;
+        top: 25%;
+        left: 5%;
+    }
+
+    .knowUsContainer .cardsContainer {
+        gap: 4rem;
+    }
+    .knowUsContainer .cardsContainer .cardSm {
+        width: 250px;
+        height: 264px;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .knowUsContainer .cardsContainer .cardSm .image {
+        width: 47px;
+        height: 47px;
+    }
+    .knowUsContainer .cardsContainer .cardSm .image img {
+        width: 100%;
+        height: 100%;
+    }
+    .knowUsContainer .cardsContainer .cardSm .content {
+        justify-content: center;
+        gap: 3rem;
+        height: 100%;
+        color: var(--clr-neutral-400);
+    }
+    .knowUsContainer .cardsContainer .cardSm .content .bolder {
+        font-size: 40px !important;
+    }
+    .faqsContainer .cardsContainer {
+        width: 1138px;
+    }
+
+    
+}

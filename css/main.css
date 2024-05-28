@@ -14,3 +14,5 @@
 @import url("./views/home.css");
 
 @import url("./layout/footer.css");
+
+@import url("./utilities/media-queries.css");

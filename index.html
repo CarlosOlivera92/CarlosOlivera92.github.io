@@ -101,13 +101,15 @@
         </header>
         <div class="heroContainer" id="hero">
             <div class="background">
-                <div class="circle"></div>
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-3"></div>
             </div>
             <div class="content">
                 <h1 class="title">
                     Chicago's <span class="clrPink">Free</span> Medical Check-Up and Weight Loss Consultation
                 </h1>
-                <p>
+                <p class="spot">
                     Only <span class="clrPink">11</span> spots available!
                 </p>
                 <div class="countdownContainer" id="countdownContainer">
@@ -115,19 +117,19 @@
                     <div class="countdown" id="countdown">
                         <div class="col" id="days">
                             <p class="countdownTag">Days</p>
-                            <p>00</p>
+                            <p class="countdownNumb">00</p>
                         </div>
                         <div class="col" id="hours">
                             <p class="countdownTag" >Hours</p>
-                            <p>16</p>
+                            <p class="countdownNumb">16</p>
                         </div>
                         <div class="col" id="minutes">
                             <p class="countdownTag" >Minutes</p>
-                            <p>29</p>
+                            <p class="countdownNumb">29</p>
                         </div>
                         <div class="col" id="seconds">
                             <p class="countdownTag">Seconds</p>
-                            <p>29</p>
+                            <p class="countdownNumb">29</p>
                         </div>
                     </div>
                 </div>
@@ -141,7 +143,7 @@
             <section class="knowUsContainer" id="knowUs">
                 <div class="background">
                     <div class="circle circle-1"></div>
-                    <div class="circle circle-2"></div>
+                    <div class="circle circle-2 show"></div>
                 </div>
                 <div class="cardsContainer">
                     <div class="cardSm">
@@ -186,6 +188,7 @@
             <section class="consultationInfoContainer" id="consultationInfo">
                 <div class="background">
                     <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
                 </div>
                 <div class="content">
                     <article class="consultationInfo">
@@ -231,8 +234,25 @@
                         </p>
                     </article>
                     <div class="image">
-                        <img src="/assets/images/medical-staff.webp" srcset="/assets/images/medical-staff.webp 375w,/assets/images/medical-staff.webp 740w, /assets/images/Staff.webp 1480w" sizes="(max-width: 600px) 375px, (max-width: 1200px) 740px, 1480px" alt="Medical Staff" title="Staff Community" width="375px" height="249px">
+                        <img 
+                            src="/assets/images/medical-staff.webp" 
+                            srcset="
+                                /assets/images/medical-staff.webp 375w,
+                                /assets/images/medical-staff.webp 800w,
+                                /assets/images/medical-staff.webp 1300w,
+                                /assets/images/Staff.webp 1300w,
+                                /assets/images/Staff.webp 1920w
+                            " 
+                            sizes="
+                                (max-width: 768px) 375px,
+                                (max-width: 1300px) 1300px,
+                                1920px
+                            " 
+                            alt="Medical Staff" 
+                            title="Staff Community"
+                        >
                     </div>
+                    
                     <article class="weightSupportInfo">
                         <p>
                             You can join the ranks of our over 15,000 satisfied clients who have lost weight, regained their confidence and are living happy exuberant lives with their family. They did this without: breaking the bank, sweating buckets in intense workout programs, and most importantly, without giving up ice-cream, bread, pizza, doughnuts and all their favorite foods.
@@ -244,7 +264,8 @@
             <section class="servicesContainer" id="services">
                 <div class="background">
                     <div class="circle circle-1"></div>
-                    <div class="circle circle-2"></div>
+                    <div class="circle circle-2 show"></div>
+                    <div class="circle circle-3"></div>
                 </div>
                 <div class="cardsContainer">
                     <h3 class="title">
@@ -492,20 +513,23 @@
                             </ul>
                         </nav>
                     </section>
-                    <section class="socialMediaContainer">
-                        <a href="https://www.instagram.com/betterweighmedical/" target="_blank">
-                            <img src="./assets/images/icons/instagram.svg" alt="instagram" title="instagram" width="30px" height="30px">
-                        </a>
-                        <a href="https://x.com/mybetterweigh" target="_blank">
-                            <img src="./assets/images/icons/twitter.svg" alt="twitter" title="twitter" width="30px" height="30px">
-                        </a>
-                        <a href="https://www.facebook.com/betterweighmedical/" target="_blank">
-                            <img src="./assets/images/icons/facebook.svg" alt="facebook" title="facebook" width="30px" height="30px">
-                        </a>
-                    </section>
-                    <div class="disclaimer">
-                        <p>Copyright by A Better Weigh Inc. &#169;All rights reserved.</p>
+                    <div class="foot">
+                        <section class="socialMediaContainer">
+                            <a href="https://www.instagram.com/betterweighmedical/" target="_blank">
+                                <img src="./assets/images/icons/instagram.svg" alt="instagram" title="instagram" width="30px" height="30px">
+                            </a>
+                            <a href="https://x.com/mybetterweigh" target="_blank">
+                                <img src="./assets/images/icons/twitter.svg" alt="twitter" title="twitter" width="30px" height="30px">
+                            </a>
+                            <a href="https://www.facebook.com/betterweighmedical/" target="_blank">
+                                <img src="./assets/images/icons/facebook.svg" alt="facebook" title="facebook" width="30px" height="30px">
+                            </a>
+                        </section>
+                        <div class="disclaimer">
+                            <p>Copyright by A Better Weigh Inc. &#169;All rights reserved.</p>
+                        </div>
                     </div>
+                    
                 </div>
             </footer>
         </main>

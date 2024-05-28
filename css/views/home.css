@@ -2,7 +2,7 @@
 
 .knowUsContainer {
     width: 100%;
-    height: 508px !important;
+    height: 508px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +104,7 @@
 }
 .consultationInfoContainer .content {
     width: 100%;
+    max-width: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,7 +185,7 @@
 .weightSupportContainer .content .image {
     width: 100%;
     position: relative;
-    left: -2rem;
+    left: -2rem !important;
 }
 .weightSupportContainer .content .image img {
     width: calc(100% + 4rem);
