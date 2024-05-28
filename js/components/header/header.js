@@ -1,7 +1,8 @@
 export const header = () => {
     const hamburguerButton = document.getElementById("hamburguer");
     const navMenu = document.getElementById("navMenu");
-    
+    const header = document.querySelector(".headerContainer");
+
     hamburguerButton.addEventListener("focus", () => {
         navMenu.classList.remove("hidden");
         navMenu.classList.add("show");
@@ -19,5 +20,13 @@ export const header = () => {
             navMenu.classList.remove("show");
             navMenu.classList.add("hidden");
         }
-    }, true); 
+    }, true);
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
 };
