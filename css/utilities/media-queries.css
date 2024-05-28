@@ -164,3 +164,90 @@
         padding: 0;
     }
 }
+@media (min-width: 1240px) {
+    p {
+        font-size: 18px !important;
+    }
+    .title {
+        width: 400px !important;
+    }
+    .headerContainer {
+        position: fixed;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .headerContainer .navbar .hamburger-menu {
+        display: none;
+    }
+
+    .headerContainer .navbar .navbar-menu {
+        height: fit-content;
+        display: flex !important;
+        flex-direction: row;
+        padding: 0;
+        position: relative;
+        background-color: transparent;
+        backdrop-filter: none;
+        opacity: 1;
+    }
+    .headerContainer .navbar .navbar-menu li {
+        opacity: 1;
+    }
+    .headerContainer .navbar .navbar-menu a {
+        color: var(--clr-neutral-400);
+        font-size: 14px;
+    }
+    .headerContainer .navbar .navbar-menu a:hover {
+        border-color: var(--clr-neutral-400) !important;
+    }
+    .heroContainer {
+        height: fit-content;
+        max-height: 760px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-block: 4rem;
+    }
+    .heroContainer .background::after {
+        width: 31%;
+    }
+    .heroContainer .content {
+        width: fit-content;
+        display: grid ;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px; 
+        padding-block: 6rem;
+        padding-inline: 0;
+    }
+    .heroContainer .content .title, .heroContainer .content .title > * {
+        font-size: 45px;
+        line-height: 68px;
+    }
+
+    .heroContainer .content .title,
+    .heroContainer .content .subtitle,
+    .heroContainer .content .button {
+        grid-column: 1; 
+    }
+    .heroContainer .content .spot {
+        display: none;
+    }
+    
+    .heroContainer .content .countdownContainer {
+        width: 629px;
+        height: 321px;
+        grid-row: 1 / span 3;
+        grid-column: 2; 
+        position: relative;
+        margin-left: -6rem;
+        align-self: flex-start;
+    }
+    .heroContainer .content.countdownContainer p {
+        font-size: 18px;
+    }
+    .heroContainer .content .countdownContainer .countdown .countdownNumb {
+        font-size: 50px;
+    }
+
+}
