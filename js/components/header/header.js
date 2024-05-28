@@ -24,9 +24,17 @@ export const header = () => {
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 0) {
-            header.classList.add("scrolled");
+            gsap.to(header, { 
+                duration: 0.5, 
+                backgroundColor: "rgba(255, 255, 255, 0.8)", 
+                backdropFilter: "blur(20px)"
+            });
         } else {
-            header.classList.remove("scrolled");
+            gsap.to(header, { 
+                duration: 0.5, 
+                backgroundColor: "transparent", 
+                backdropFilter: "blur(0px)"
+            });
         }
     });
 };
