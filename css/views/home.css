@@ -245,10 +245,10 @@
 .servicesContainer .cardsContainer .title {
     text-align: left;
 }
-.servicesContainer .cardsContainer .card:nth-child(2) .divider {
+.servicesContainer .cardsContainer .card:nth-child(1) .divider {
     background-color: var(--clr-secondary-800);
 }
-.servicesContainer .cardsContainer .card:nth-child(3) .divider {
+.servicesContainer .cardsContainer .card:nth-child(2) .divider {
     background-color: var(--clr-primary-800);
 }
 .faqsContainer {

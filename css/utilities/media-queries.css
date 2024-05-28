@@ -166,12 +166,10 @@
     }
 }
 @media (min-width: 1240px) {
-    p {
+    li, p {
         font-size: 18px !important;
     }
-    .title {
-        width: 400px !important;
-    }
+
     .headerContainer {
         position: fixed;
         justify-content: center;
@@ -242,6 +240,7 @@
         padding-inline: 0;
     }
     .heroContainer .content .title, .heroContainer .content .title > * {
+        width: 400px;
         font-size: 45px;
         line-height: 68px;
     }
@@ -315,9 +314,173 @@
     .knowUsContainer .cardsContainer .cardSm .content .bolder {
         font-size: 40px !important;
     }
+    .consultationInfoContainer {
+        height: 799px;
+    }
+    .consultationInfoContainer .background .circle-1 {
+        width: 489px;
+        height: 489px;
+        top: 20%;
+        left: 90%;
+    }
+    .consultationInfoContainer .background .circle-2 {
+        width: 271px;
+        height: 271px;
+        top: 50%;
+        left: -7%;
+        opacity: 1;
+    }
+    .consultationInfoContainer .content {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px; 
+        align-items: start; 
+    }
+    
+    .consultationInfoContainer .content .consultationInfo:nth-child(1),
+    .consultationInfoContainer .content .consultationInfo:nth-child(2),
+    .consultationInfoContainer .content .button {
+        grid-column: 1;
+    }
+    
+    .consultationInfoContainer .content .image {
+        grid-row: 1 / span 3; 
+        grid-column: 2;
+        align-self: flex-end;
+    }
+    .consultationInfoContainer .content .image .circle-4 {
+        display: block !important;
+    }
+    .consultationInfoContainer .content .image img {
+        width: 404px;
+        height: 404px;
+    }
+    .weightSupportContainer {
+        height: 794px;
+    }
+    .weightSupportContainer .background .circle-1 {
+        display: none;
+    }
+
+    .weightSupportContainer .content {
+        width: auto;
+        max-width: 1140px;
+        display: flex;
+        text-align: center;
+    }
+    
+    .weightSupportContainer .content .title {
+        grid-row: 1;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .weightSupportContainer .content .weightSupportInfo:nth-child(1) {
+        grid-row: 2;
+    }
+    
+    .weightSupportContainer .content .weightSupportInfo:nth-child(2) {
+        grid-row: 3;
+    }
+    
+    .weightSupportContainer .content .weightSupportInfo:nth-child(3) {
+        grid-row: 4;
+    }
+    
+    .weightSupportContainer .content .image {
+        width: 100% ;
+        height: 333px;
+        left: 0 !important;
+        grid-row: 6; 
+        order: 99; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .weightSupportContainer .content .image img {
+        width: 1051px;
+        height: 100%;
+    }
+    .weightSupportContainer .button {
+        grid-row: 5;
+    }
+    .servicesContainer {
+        height: 796px;
+    }
+    .servicesContainer .cardsContainer {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .servicesContainer .cardsContainer .card {
+        width: 447px;
+        height: 391px; 
+        padding: 2rem;
+    }
+    .servicesContainer .cardsContainer .card .cardHeader .title{
+        font-size: 24px !important;
+        line-height: 41px;
+    }
+    .servicesContainer .cardsContainer .card .cardContent .listContainer {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: space-between;
+    }
     .faqsContainer .cardsContainer {
         width: 1138px;
     }
-
+    .footerContainer .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        align-self: center;
+        gap: 4rem;
+    }
+    
+    .footerContainer .content .companyContainer {
+        grid-column: 1;
+        grid-row: 1;
+        width: 443px;
+    }
+    
+    .footerContainer .content .contactContainer {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+    
+    .footerContainer .content .linksContainer {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: flex-start;
+        gap: 5rem;
+    }
+    .footerContainer .content .linksContainer .title {
+        font-size: 24px !important; 
+    }
+    .footerContainer .content .foot {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        width: 100%;
+    }
+    
+    .footerContainer .content .contactContainer .contactItem {
+        width: 100%;
+    }
+    
+    .footerContainer .content .contactContainer .contactItem .contactInfo {
+        display: flex;
+    }
+    
+    .footerContainer .content .socialMediaContainer,
+    .footerContainer .content .disclaimer {
+        width: 100%;
+    }
     
 }
