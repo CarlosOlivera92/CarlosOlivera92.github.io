@@ -86,7 +86,6 @@
     100% {
         border-bottom: 2px solid var(--clr-neutral-0);
         padding-bottom: 1rem;
-
     }
 }
 @keyframes menuAppear {
